@@ -82,11 +82,18 @@ public class Array10 {
 
         for (int i = 0; i < data.length(); i++) {
             System.out.println(""+( i + 1 == data.length() ) + (i + 1) + " == "+ (data.length()) +" "+data.charAt(i));
-            if (data.charAt(i) == ','){
+//            if (data.charAt(i) == ','){
+//                result[count++] = temp;
+//                temp = "";
+//            } else {
+//                temp += data.charAt(i);
+//            }
+            if (data.charAt(i) != ','){
+                temp += data.charAt(i);
+
+            } else {
                 result[count++] = temp;
                 temp = "";
-            } else {
-                temp += data.charAt(i);
             }
 //            if (i + 1 == data.length()) {
 //                result[count++] = temp;
